@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingCategoryActovity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="211dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="56dp"
+        android:text="Welcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/byCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:text="Shop by Category"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/welcome" />
+
+    <ImageView
+        android:id="@+id/imageViewElectronics"
+        android:layout_width="161dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewClothing"
+        app:layout_constraintHorizontal_bias="0.342"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/byCategory"
+        app:srcCompat="@drawable/electronics" />
+
+    <ImageView
+        android:id="@+id/imageViewClothing"
+        android:layout_width="164dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/byCategory"
+        app:srcCompat="@drawable/clothing" />
+
+    <TextView
+        android:id="@+id/textViewElectronics"
+        android:layout_width="71dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="160dp"
+        android:text="Electronics"
+        app:layout_constraintEnd_toStartOf="@+id/textViewClothing"
+        app:layout_constraintHorizontal_bias="0.294"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewElectronics" />
+
+    <TextView
+        android:id="@+id/textViewClothing"
+        android:layout_width="71dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="52dp"
+        android:text="Clothing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewClothing" />
+
+    <ImageView
+        android:id="@+id/imageViewBeauty"
+        android:layout_width="159dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewFood"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewElectronics"
+        app:srcCompat="@drawable/beauty" />
+
+    <ImageView
+        android:id="@+id/imageViewFood"
+        android:layout_width="155dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewClothing"
+        app:srcCompat="@drawable/food" />
+
+    <TextView
+        android:id="@+id/textViewBeauty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:text="Beauty"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFood"
+        app:layout_constraintHorizontal_bias="0.249"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBeauty" />
+
+    <TextView
+        android:id="@+id/textViewFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="80dp"
+        android:text="Food"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFood" />
+</androidx.constraintlayout.widget.ConstraintLayout>
